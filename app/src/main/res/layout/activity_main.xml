@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#10EA00"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ch"
+        android:layout_width="138dp"
+        android:layout_height="72dp"
+        android:text="CHOOSE IMAGE" />
+
+    <EditText
+        android:id="@+id/nam"
+        android:layout_width="267dp"
+        android:layout_height="69dp"
+        android:layout_alignLeft="@+id/ch"
+        android:layout_marginLeft="144dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="name" />
+
+    <ImageView
+        android:id="@+id/ivf"
+        android:layout_width="388dp"
+        android:layout_height="268dp"
+        android:layout_below="@+id/ch"
+        android:layout_marginTop="11dp" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ivf"
+        android:id="@+id/pb"
+        android:layout_marginTop="29dp"
+        android:background="#AFC8CE"/>
+    <Button
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivf"
+        android:layout_marginTop="55dp"
+        android:text="UPLOAD" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ret"
+        android:layout_below="@+id/up"
+        android:text="RETREAVE"/>
+
+
+</RelativeLayout>
